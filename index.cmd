@@ -34,7 +34,9 @@ See b<https://github.com/stroke-input> for the GitHub organisation.
 --
 
 
-## Stroke Input Method (筆畫輸入法) for Android
+## Implementations
+
+### Stroke Input Method (筆畫輸入法) for Android
 
 ==
 - [![Get it on F-Droid]{width=180 height=auto}(https://fdroid.gitlab.io/artwork/badge/get-it-on.png)][f-droid]
@@ -46,7 +48,7 @@ See b<https://github.com/stroke-input> for the GitHub organisation.
 [google-play]: https://play.google.com/store/apps/details?id=io.github.yawnoc.strokeinput
 
 
-## Stroke input method (筆畫輸入法): JavaScript
+### Stroke input method (筆畫輸入法): JavaScript
 
 ==
 - [Try it online](/javascript/)
