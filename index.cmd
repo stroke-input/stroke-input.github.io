@@ -41,3 +41,11 @@ See b<https://github.com/stroke-input> for the GitHub organisation.
 
 [f-droid]: https://f-droid.org/en/packages/io.github.yawnoc.strokeinput/
 [google-play]: https://play.google.com/store/apps/details?id=io.github.yawnoc.strokeinput
+
+
+## Stroke input method (筆畫輸入法): JavaScript
+
+==
+- [Try it online](/javascript/)
+- [Source code on GitHub](https://github.com/stroke-input/stroke-input-javascript)
+==
