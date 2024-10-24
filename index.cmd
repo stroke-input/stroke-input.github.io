@@ -54,3 +54,11 @@ See b<https://github.com/stroke-input> for the GitHub organisation.
 - [Try it online](/javascript/)
 - [Source code on GitHub](https://github.com/stroke-input/stroke-input-javascript)
 ==
+
+
+## Supporting repositories
+
+==
+- [Conway Stroke Data](https://github.com/stroke-input/stroke-input-data)
+- [Stroke Input Font](https://github.com/stroke-input/stroke-input-font)
+==
