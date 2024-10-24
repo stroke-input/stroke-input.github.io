@@ -11,13 +11,6 @@ OrdinaryDictionaryReplacement: #.boilerplate-properties-override
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="/javascript/stroke-input.min.css">
-* %styles -->
-    img {
-      vertical-align: middle;
-    }
-    li {
-      margin-bottom: 0.5em;
-    }
 
 RegexDictionaryReplacement: #.chinese-lang
 - queue_position: BEFORE #escape-idle-html
