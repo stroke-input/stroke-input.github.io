@@ -32,8 +32,8 @@ See b<https://github.com/stroke-input> for the GitHub organisation.
 ### Stroke Input Method (筆畫輸入法) for Android
 
 ==
-- [![Get it on F-Droid]{width=180 height=auto}(https://fdroid.gitlab.io/artwork/badge/get-it-on.png)][f-droid]
-- [![Get it on Google Play]{width=180 height=auto}(https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)][google-play]
+- [![Get it on F-Droid]{width=180}(https://fdroid.gitlab.io/artwork/badge/get-it-on.png)][f-droid]
+- [![Get it on Google Play]{width=180}(https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)][google-play]
 - [Source code on GitHub](https://github.com/stroke-input/stroke-input-android)
 ==
 
