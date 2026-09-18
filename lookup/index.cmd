@@ -52,13 +52,16 @@ OrdinaryDictionaryReplacement: #.links.license-links
 
 --
 <label for="filter">__Filter:__</label>
-<input type="text" id="filter" oninput="applyFilter()" placeholder="(not very performant)" lang="zh-Hant">
+<input type="text" id="filter" oninput="applyFilter()" lang="zh-Hant">
 --
 <noscript>
 --
 **{.disabled} JavaScript is required for filter to function.**
 --
 </noscript>
+--
+This filter is not very performant. Browser-native find (Ctrl+F) will likely be faster.
+--
 
 ||||
 

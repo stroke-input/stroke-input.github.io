@@ -30,13 +30,16 @@ padding: 0.4em;
 <div id="input-container">
 <p>
 <label for="filter"><b>Filter:</b></label>
-<input type="text" id="filter" oninput="applyFilter()" placeholder="(not very performant)" lang="zh-Hant">
+<input type="text" id="filter" oninput="applyFilter()" lang="zh-Hant">
 </p>
 <noscript>
 <p>
 <strong class="disabled">JavaScript is required for filter to function.</strong>
 </p>
 </noscript>
+<p>
+This filter is not very performant. Browser-native find (Ctrl+F) will likely be faster.
+</p>
 </div>
 <script>
 function applyFilter()
