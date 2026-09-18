@@ -37,12 +37,36 @@ OrdinaryDictionaryReplacement: #.links.license-links
 
 # %title
 
+
+||||{#input-container}
+
+--
+<label for="filter">__Filter:__</label>
+<input type="text" id="filter" oninput="applyFilter()" lang="zh-Hant">
+--
 <noscript>
 --
 **{.disabled} JavaScript is required for lookup to function.**
 --
 </noscript>
 
+||||
+
+u<``<script>
+function applyFilter()
+{
+  let filterElement = document.getElementById('filter');
+  let filterString = filterElement.value.toUpperCase().trim();
+
+  for (const rowElement of document.querySelectorAll('tbody tr'))
+  {
+    let isMatch = rowElement.textContent.indexOf(filterString) > -1;
+    rowElement.style.display = isMatch ? '' : 'none';
+  }
+}
+
+window.onload = applyFilter;
+</script>``>
 
 <## data-table ##>
 ''''

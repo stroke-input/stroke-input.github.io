@@ -15,11 +15,32 @@
 </head>
 <body>
 <h1>Stroke input method (<span lang="zh-Hant">筆畫輸入法</span>): Lookup v0.0.0</h1>
+<div id="input-container">
+<p>
+<label for="filter"><b>Filter:</b></label>
+<input type="text" id="filter" oninput="applyFilter()" lang="zh-Hant">
+</p>
 <noscript>
 <p>
 <strong class="disabled">JavaScript is required for lookup to function.</strong>
 </p>
 </noscript>
+</div>
+<script>
+function applyFilter()
+{
+  let filterElement = document.getElementById('filter');
+  let filterString = filterElement.value.toUpperCase().trim();
+
+  for (const rowElement of document.querySelectorAll('tbody tr'))
+  {
+    let isMatch = rowElement.textContent.indexOf(filterString) > -1;
+    rowElement.style.display = isMatch ? '' : 'none';
+  }
+}
+
+window.onload = applyFilter;
+</script>
 <table>
 <thead>
 <tr>
