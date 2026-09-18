@@ -35,7 +35,7 @@ class CCSLine:
             '  //',
             '    ; Codepoint',
             '    ; Character',
-            '    ; Sequence regex',
+            '    ; Regex',
             '    ; Sequences',
         ])
 
@@ -111,7 +111,7 @@ def main():
         f"''''",
         f'|^',
         CCSLine.head_row_cmd(),
-        f'|:{{style="overflow-wrap: anywhere"}}',
+        f'|:',
         *[ccs_line.body_row_cmd(sequences_from_character) for ccs_line in ccs_lines],
         f"''''",
         f'<## /data-table ##>',

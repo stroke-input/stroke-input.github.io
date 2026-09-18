@@ -1,7 +1,7 @@
 OrdinaryDictionaryReplacement: #.boilerplate-properties-override
 - queue_position: BEFORE #boilerplate-properties
 - apply_mode: SEQUENTIAL
-* %title --> Stroke input method (筆畫輸入法): Lookup v0.0.0
+* %title --> Stroke input method (筆畫輸入法): Data lookup v0.0.0
 * %head-elements-before-viewport -->
     <meta name="description" content="Stroke lookup for the stroke input method (筆畫輸入法).">
 * %head-elements-after-viewport -->
@@ -12,6 +12,17 @@ OrdinaryDictionaryReplacement: #.boilerplate-properties-override
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="/javascript/stroke-input.min.css">
     <script>let FIREFOX_FOUC_FIX;</script>
+* %styles -->
+    table {
+      border-collapse: collapse;
+    }
+    tbody {
+      overflow-wrap: anywhere;
+    }
+    th, td {
+      border: 1px solid white;
+      padding: 0.4em;
+    }
 
 RegexDictionaryReplacement: #.chinese-lang
 - queue_position: BEFORE #escape-idle-html
@@ -74,9 +85,9 @@ window.onload = applyFilter;
   //
     ; Codepoint
     ; Character
-    ; Sequence regex
+    ; Regex
     ; Sequences
-|:{style="overflow-wrap: anywhere"}
+|:
   //
     , U+3007
     , 〇

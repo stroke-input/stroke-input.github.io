@@ -11,10 +11,22 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="stylesheet" href="/javascript/stroke-input.min.css">
 <script>let FIREFOX_FOUC_FIX;</script>
-<title>Stroke input method (筆畫輸入法): Lookup v0.0.0</title>
+<title>Stroke input method (筆畫輸入法): Data lookup v0.0.0</title>
+<style>
+table {
+border-collapse: collapse;
+}
+tbody {
+overflow-wrap: anywhere;
+}
+th, td {
+border: 1px solid white;
+padding: 0.4em;
+}
+</style>
 </head>
 <body>
-<h1>Stroke input method (<span lang="zh-Hant">筆畫輸入法</span>): Lookup v0.0.0</h1>
+<h1>Stroke input method (<span lang="zh-Hant">筆畫輸入法</span>): Data lookup v0.0.0</h1>
 <div id="input-container">
 <p>
 <label for="filter"><b>Filter:</b></label>
@@ -46,11 +58,11 @@ window.onload = applyFilter;
 <tr>
 <th>Codepoint</th>
 <th>Character</th>
-<th>Sequence regex</th>
+<th>Regex</th>
 <th>Sequences</th>
 </tr>
 </thead>
-<tbody style="overflow-wrap: anywhere">
+<tbody>
 <tr>
 <td>U+3007</td>
 <td><span lang="zh-Hant">〇</span></td>
