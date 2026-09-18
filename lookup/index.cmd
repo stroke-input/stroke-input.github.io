@@ -48,12 +48,11 @@ OrdinaryDictionaryReplacement: #.links.license-links
 
 # %title
 
-
 ||||{#input-container}
 
 --
 <label for="filter">__Filter:__</label>
-<input type="text" id="filter" oninput="applyFilter()" lang="zh-Hant">
+<input type="text" id="filter" oninput="applyFilter()" placeholder="(not very performant)" lang="zh-Hant">
 --
 <noscript>
 --
@@ -71,7 +70,9 @@ function applyFilter()
 
   for (const rowElement of document.querySelectorAll('tbody tr'))
   {
-    let isMatch = rowElement.textContent.indexOf(filterString) > -1;
+    let isMatch =
+      ["", "U", "+", "U+"].includes(filterString)
+      || (rowElement.textContent.indexOf(filterString) > -1);
     rowElement.style.display = isMatch ? '' : 'none';
   }
 }
