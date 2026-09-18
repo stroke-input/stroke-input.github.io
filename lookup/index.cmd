@@ -56,7 +56,7 @@ OrdinaryDictionaryReplacement: #.links.license-links
 --
 <noscript>
 --
-**{.disabled} JavaScript is required for lookup to function.**
+**{.disabled} JavaScript is required for filter to function.**
 --
 </noscript>
 
